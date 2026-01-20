@@ -46,3 +46,6 @@ access_token\$production\$[A-Za-z0-9]{16}\$[A-Za-z0-9]{32}
 SG\.[A-Za-z0-9_-]{22}\.[A-Za-z0-9_-]{43}
 ghs_[A-Za-z0-9]{36}
 circleci-[a-f0-9]{40}
+eval\(.*location\.
+\.innerHTML\s*=\s*`.*\$\{.*\}.*`
+document\.write\(["'`].*["'`]\s*\+\s*location\.
