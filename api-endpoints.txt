@@ -2,6 +2,7 @@
 /api/
 /api/admin
 /api/admin/auth
+/api/resize
 /api/admin/menu
 /api/admin/menu/tree
 /api/admin/properties
