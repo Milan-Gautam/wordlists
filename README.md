@@ -17,7 +17,9 @@ ffuf -u https://target.com/FUZZ -w wordlist.txt
 ```
 
 ## ⚠️ Disclaimer
+
 For authorized security assessments only. Use responsibly.
 
 ## 🙏 Credits
+
 Godfather Orwa, NahamSec, N0k0d0v, SecLists, PayloadsAllTheThings, and the bug bounty
