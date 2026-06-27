@@ -14,6 +14,7 @@ A comprehensive, handpicked collection of wordlists sourced from leading bug hun
 
 ```bash
 ffuf -u https://target.com/FUZZ -w wordlist.txt
+```
 
 ##⚠️ Disclaimer
 For authorized security assessments only. Use responsibly.
