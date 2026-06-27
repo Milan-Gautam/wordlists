@@ -16,8 +16,8 @@ A comprehensive, handpicked collection of wordlists sourced from leading bug hun
 ffuf -u https://target.com/FUZZ -w wordlist.txt
 ```
 
-##⚠️ Disclaimer
+## ⚠️ Disclaimer
 For authorized security assessments only. Use responsibly.
 
-##🙏 Credits
+## 🙏 Credits
 Godfather Orwa, NahamSec, N0k0d0v, SecLists, PayloadsAllTheThings, and the bug bounty
